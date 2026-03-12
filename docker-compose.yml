@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  signal:
+    build: .
+    container_name: signal-v7
+    ports:
+      - "8080:8080"
+    environment:
+      GEMINI_API_KEY: YOUR_GEMINI_KEY
+      PERPLEXITY_API_KEY: YOUR_PERPLEXITY_KEY
+    restart: always
